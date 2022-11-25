@@ -1,0 +1,22 @@
+{
+    "DATOS": {
+        "TAMAÑOS":[
+            {
+                "Opcion1": "Pequeña",
+                "Opcion2": "Mediana",
+                "Opcion3": "Grande"
+            }
+        ],
+
+        "INGREDIENTES":[
+
+            {
+                "Opcion4": "Bacon",
+                "Opcion5": "Jamon",
+                "Opcion6": "Cecina",
+                "Opcion7": "Chorizo",
+                "Opcion8": "Jamon york"
+            }
+        ]
+    }
+}

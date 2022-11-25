@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+
+<style>
+
+        .col{
+            text-align:center;
+            color:red;
+            font-weight:bold;
+        }
+
+</style>
+
+
+    <script>
+ 
+        var objetoJsonBasico = {"atributo1" : "valor1"}
+        console.log(objetoJsonBasico)
+
+        objetoJsonBasico = {"atributo1" : "valor1","atributo2" : "valor2"}
+        console.log(objetoJsonBasico)
+     
+        var arrayBasico = ["valor1","valor2","valor3",5,true,false,null,{"atributo1" : "valor1"}]
+        console.log(arrayBasico)
+        
+       
+        var homer = {
+            "nombre" : "Homer",
+            "apellidos" : "Simpson",
+            "edad" : 40,
+            "estaCasado" : true,
+            "cervezasFavoritas" : ["Mahou", "Aguila", "San Miguel" ],
+            "direccion" : {
+                "tipoVia" : "Calle",
+                "nombreVia" : "742 Evergreen Terrace",
+                "CIUDAD" : "Springfield" 
+            }
+        }
+
+        
+        document.write("<br><br><br><br>"+homer)
+        document.write("<br><br>"+homer.nombre)
+        document.write("<br><br>"+homer.edad)
+        document.write("<br><br>"+homer.estaCasado)
+        document.write("<br><br>"+homer.cervezasFavoritas[2])
+        document.write("<br><br>"+homer.direccion.tipoVia)
+        document.write("<br><br>"+homer.direccion.CIUDAD)
+
+       
+
+        var textoJson = JSON.stringify(homer)
+        document.write("<br><br>Texto json: " + textoJson)
+
+     
+        textoJson = '{"nombre" : "Marge","edad" : 38}'
+        var objetoJson = JSON.parse(textoJson)
+        document.write("<br><br>"+objetoJson)
+        document.write("<br><br>"+objetoJson.nombre)
+        document.write("<br><br>"+objetoJson.edad)
+
+
+    </script>
+
+
+</head>
+<body>
+
+
+    <h1 class="col">JSON</h1>
+
+
+</body>
+</html>

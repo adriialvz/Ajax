@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="AE-2.js"></script>
+</head>
+
+
+<body bgcolor="grey" onload="ponerFoco()">
+    <button id="btnBuscarAsincrono" onclick="enviarPeticionAsincrona()">Buscar asíncrono</button>
+    <table id="resultadoBusqueda"></table>
+
+<div class="">
+
+
+  <h1>FORMULARIO DE ALTA PARA PEDIR UNA PIZZA</h1>
+
+  <form class="" name="formu" action="" method="post">
+
+          <fieldset>
+              <legend class=""><h4>Datos personales</h4></legend>
+              <input type="text" name="nombre" id="nombre" value="" placeholder="Nombre" size="20"><br><br>
+              <input type="text" name="dir" id="dir" value="" placeholder="Direccion" size="40"><br><br>
+              <input type="text" name="tlfn" id="tlfn" value="" placeholder="Telefono"><br><br>
+              <input type="text" name="email" id="email" value="" placeholder="Correo electronico" size="40"><br><br>
+          </fieldset><br><br>
+
+
+
+          <fieldset>
+              <legend class=""><h4>Tamaño de la pizza</h4></legend>
+              <input type="radio" name="opc1" id="uno"><br><br>
+              <input type="radio" name="opc1" id="dos">Mediana<br><br>
+              <input type="radio" name="opc1" id="tres">Grande<br><br>
+          </fieldset><br><br>
+
+
+
+
+          <fieldset>
+              <legend class=""><h4>Ingredientes</h4></legend>
+              <h6>*Todas traen tomate y queso</h6>
+              <input type="checkbox" name="opc2" id="cuatro" value="">Bacon
+              <input type="checkbox" name="opc2" id="cinco" value="">Jamon
+              <input type="checkbox" name="opc2" id="seis" value="">Cecina
+              <input type="checkbox" name="opc2" id="siete" value="">Chorizo
+              <input type="checkbox" name="opc2" id="ocho" value="">Jamon York <br><br>
+          </fieldset><br><br>
+
+
+
+
+
+              <input type="button" name="envio" id="envio" value="Procesar pedido" onclick="validarForm()">
+              <input type="reset" name="borrar" value="Borrar pedido">
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+</html>
